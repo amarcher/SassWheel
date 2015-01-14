@@ -1,7 +1,7 @@
 # SassWheel
 A 3D "wheel" using minimal SASS &amp; JS
 
-[Live Demo](http://sasswheel.herokuapp.com/)
+[Live Demo](http://amarcher.github.io/playground/css_wheel/)
 
 # Usage
 1. Clone the repository
