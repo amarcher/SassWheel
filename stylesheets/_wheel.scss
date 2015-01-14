@@ -1,0 +1,24 @@
+/**
+*   author: Andrew Archer
+*   date: January 13, 2015
+*/
+
+@function theta() {
+	@return 360 / $panelCount;
+}
+
+@function radius() {
+	@return ( $panelHeight / 2 ) / ( pi() / $panelCount );
+}
+
+@function angle($panel) {
+	@return theta() * $panel;
+}
+
+@function deg($measure) {
+	@return unquote($measure + 'deg');
+}
+
+@function px($measure) {
+	@return unquote($measure + 'px');
+}

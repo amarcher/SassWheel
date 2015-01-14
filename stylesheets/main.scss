@@ -1,0 +1,48 @@
+@import "vars";
+@import "wheel";
+@import "mixins";
+@import "custom";
+
+.container {
+	@include pespective(1000px);
+	position: relative;
+	width: #{$wheelWidth}px;
+	height: 100vh;
+	margin: auto;
+  top: -#{$panelHeight/2}px;
+}
+
+.carousel {
+  @include transform(translateZ(-0px) rotateX(-0deg));
+  @include transform-origin(center);
+  @include transform-style(preserve-3d);
+
+  height: #{$panelHeight}px;
+  width: 100%;
+  position: absolute;
+  top: 50vh;
+  
+  transition: transform $spinSpeed;
+  -webkit-transition: -webkit-transform $spinSpeed;
+
+  figure {
+    display: block;
+    position: absolute;
+    width: #{$wheelWidth}px;
+    height: #{$panelHeight}px;
+    line-height: #{$panelHeight}px;
+    
+    text-align: center;
+    background-color: $panelColor;
+    font-size: $panelFontSize;
+    opacity: .4;
+    border: 2px solid black;
+    margin: 0px;
+    -webkit-backface-visibility: $backFaceVisibility;
+    backface-visibility: $backFaceVisibility;
+  }
+
+  @for $i from 0 through $panelCount {
+    figure:nth-child( #{$i} ) { @include transform(rotateX(deg(angle( $i - 1 ))) translateZ(px(radius()))); }
+  }
+}

@@ -1,0 +1,111 @@
+/**
+*   author: Andrew Archer
+*   date: January 13, 2015
+*/
+* {
+  margin: 0px;
+  padding: 0px; }
+
+.controls {
+  position: absolute;
+  top: 0px; }
+  .controls .spin {
+    display: inline-block;
+    margin: 0px auto;
+    width: 100px; }
+  .controls input {
+    display: inline-block;
+    margin: 0px auto;
+    width: 100px; }
+
+.container {
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  position: relative;
+  width: 172px;
+  height: 100vh;
+  margin: auto;
+  top: -75px; }
+
+.carousel {
+  -webkit-transform: translateZ(0px) rotateX(0deg);
+  -moz-transform: translateZ(0px) rotateX(0deg);
+  -ms-transform: translateZ(0px) rotateX(0deg);
+  transform: translateZ(0px) rotateX(0deg);
+  -webkit-transform-origin: center;
+  transform-origin: center;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  height: 150px;
+  width: 100%;
+  position: absolute;
+  top: 50vh;
+  transition: transform 0.8s;
+  -webkit-transition: -webkit-transform 0.8s; }
+  .carousel figure {
+    display: block;
+    position: absolute;
+    width: 172px;
+    height: 150px;
+    line-height: 150px;
+    text-align: center;
+    background-color: green;
+    font-size: 1.8em;
+    opacity: .4;
+    border: 2px solid black;
+    margin: 0px;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible; }
+  .carousel figure:nth-child(0) {
+    -webkit-transform: rotateX(-40deg) translateZ(214.85917px);
+    -moz-transform: rotateX(-40deg) translateZ(214.85917px);
+    -ms-transform: rotateX(-40deg) translateZ(214.85917px);
+    transform: rotateX(-40deg) translateZ(214.85917px); }
+  .carousel figure:nth-child(1) {
+    -webkit-transform: rotateX(0deg) translateZ(214.85917px);
+    -moz-transform: rotateX(0deg) translateZ(214.85917px);
+    -ms-transform: rotateX(0deg) translateZ(214.85917px);
+    transform: rotateX(0deg) translateZ(214.85917px); }
+  .carousel figure:nth-child(2) {
+    -webkit-transform: rotateX(40deg) translateZ(214.85917px);
+    -moz-transform: rotateX(40deg) translateZ(214.85917px);
+    -ms-transform: rotateX(40deg) translateZ(214.85917px);
+    transform: rotateX(40deg) translateZ(214.85917px); }
+  .carousel figure:nth-child(3) {
+    -webkit-transform: rotateX(80deg) translateZ(214.85917px);
+    -moz-transform: rotateX(80deg) translateZ(214.85917px);
+    -ms-transform: rotateX(80deg) translateZ(214.85917px);
+    transform: rotateX(80deg) translateZ(214.85917px); }
+  .carousel figure:nth-child(4) {
+    -webkit-transform: rotateX(120deg) translateZ(214.85917px);
+    -moz-transform: rotateX(120deg) translateZ(214.85917px);
+    -ms-transform: rotateX(120deg) translateZ(214.85917px);
+    transform: rotateX(120deg) translateZ(214.85917px); }
+  .carousel figure:nth-child(5) {
+    -webkit-transform: rotateX(160deg) translateZ(214.85917px);
+    -moz-transform: rotateX(160deg) translateZ(214.85917px);
+    -ms-transform: rotateX(160deg) translateZ(214.85917px);
+    transform: rotateX(160deg) translateZ(214.85917px); }
+  .carousel figure:nth-child(6) {
+    -webkit-transform: rotateX(200deg) translateZ(214.85917px);
+    -moz-transform: rotateX(200deg) translateZ(214.85917px);
+    -ms-transform: rotateX(200deg) translateZ(214.85917px);
+    transform: rotateX(200deg) translateZ(214.85917px); }
+  .carousel figure:nth-child(7) {
+    -webkit-transform: rotateX(240deg) translateZ(214.85917px);
+    -moz-transform: rotateX(240deg) translateZ(214.85917px);
+    -ms-transform: rotateX(240deg) translateZ(214.85917px);
+    transform: rotateX(240deg) translateZ(214.85917px); }
+  .carousel figure:nth-child(8) {
+    -webkit-transform: rotateX(280deg) translateZ(214.85917px);
+    -moz-transform: rotateX(280deg) translateZ(214.85917px);
+    -ms-transform: rotateX(280deg) translateZ(214.85917px);
+    transform: rotateX(280deg) translateZ(214.85917px); }
+  .carousel figure:nth-child(9) {
+    -webkit-transform: rotateX(320deg) translateZ(214.85917px);
+    -moz-transform: rotateX(320deg) translateZ(214.85917px);
+    -ms-transform: rotateX(320deg) translateZ(214.85917px);
+    transform: rotateX(320deg) translateZ(214.85917px); }
+
+/*# sourceMappingURL=main.css.map */

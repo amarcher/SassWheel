@@ -1,0 +1,19 @@
+* {
+	margin: 0px;
+	padding: 0px;
+}
+
+.controls {
+  position: absolute;
+  top: 0px;
+  .spin {
+    display: inline-block;
+    margin: 0px auto;
+    width: 100px;
+  }
+  input {
+    display: inline-block;
+    margin: 0px auto;
+    width: 100px;
+  }
+}

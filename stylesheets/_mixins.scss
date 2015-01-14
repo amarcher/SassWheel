@@ -1,0 +1,23 @@
+@mixin transform($value) {
+  -webkit-transform: $value;
+     -moz-transform: $value;
+      -ms-transform: $value;
+          transform: $value;
+}
+
+@mixin pespective($value) {
+	-webkit-perspective: $value;
+  	 -moz-perspective: $value;
+          perspective: $value;
+}
+
+@mixin transform-origin($value) {
+	-webkit-transform-origin: $value;
+					transform-origin: $value;
+}
+
+@mixin transform-style($value) {
+	-webkit-transform-style: $value;
+					transform-style: $value;
+}
+

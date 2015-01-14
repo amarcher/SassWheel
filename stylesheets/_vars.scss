@@ -1,0 +1,11 @@
+$panelCount: 9;
+$panelHeight: 150;
+$wheelWidth: 172;
+$panelColor: green;
+$panelFontSize: 1.8em;
+$spinSpeed: .8s;
+$backFaceVisibility: visible;
+
+@function pi() {
+  @return 3.14159265359;
+}
